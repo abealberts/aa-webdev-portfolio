@@ -8,10 +8,23 @@
     border: solid 1px black;
 }
 
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    border: none;
+    border-bottom: solid 1px black;
 }
 
 nav {
@@ -23,15 +36,14 @@ nav {
     flex-direction: column;
     max-width: 30%;
     flex-basis: 30%;
-
 }
 
 .name-plate h1 {
-
+    border: none;
 }
 
 .name-plate p {
-
+    border: none;
 }
 
 .header-logo {
@@ -46,6 +58,19 @@ nav {
     display: flex;
     flex-direction: row;
     flex-basis: 30%;
+
+    border: none;
+}
+
+.nav-links li {
+    border: none;
+}
+
+.header-marquee {
+    border: none;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+    scroll-behavior: smooth;
 }
 
 .about {
