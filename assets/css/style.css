@@ -64,6 +64,7 @@ nav {
 
 .nav-links li {
     border: none;
+    justify-content: space-around;
 }
 
 .header-marquee {
@@ -89,6 +90,7 @@ nav {
 .about-image {
     flex-basis: 25%;
     max-width: 25%;
+    align-self:;
 }
 
 .about-description {
