@@ -1,5 +1,6 @@
 :root {
     --yellow: #ffff00;
+    --grey: #c5c5c5;
 }
 
 * {
@@ -22,6 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    box-shadow: 0 4px var(--grey);
 
     border: none;
     border-bottom: solid 1px black;
@@ -29,6 +31,10 @@ header {
 
 nav {
     min-width: 30%;
+
+    border: none;
+
+
 }
 
 .name-plate {
@@ -36,10 +42,15 @@ nav {
     flex-direction: column;
     max-width: 30%;
     flex-basis: 30%;
+    text-align: right;
+
+    border: none;
+
 }
 
 .name-plate h1 {
     border: none;
+    border-bottom: solid 1px black;
 }
 
 .name-plate p {
@@ -47,7 +58,7 @@ nav {
 }
 
 .header-logo {
-    aspect-ratio: 1 / 1;
+    margin: 12px 0;
     max-width: 150px;
     min-width: 50px;
     flex-basis: 30%;
@@ -60,23 +71,64 @@ nav {
     flex-basis: 30%;
 
     border: none;
-}
-
-.nav-links li {
-    border: none;
     justify-content: space-around;
 }
 
-.header-marquee {
+.nav-links li {
+    padding: 12px;
+    border: solid 1px black;
+}
+
+.nav-links li:hover {
+    cursor: pointer;
+    background-color: var(--yellow);
+}
+
+.nav-links li:active {
+    cursor: grabbing;
+    background-color: var(--grey);
+}
+
+/* scrolling text container */
+.scrolling-text {
+    margin: auto;
+    width: 99%;
+    overflow: hidden;
+    display: flex;
+    white-space: nowrap;
+
     border: none;
-    border-left: solid 2px black;
-    border-right: solid 2px black;
-    scroll-behavior: smooth;
+}
+
+/*scrolling text under header*/
+.scrolling-text-p {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: lowercase;
+    color: black;
+    animation: animate-text 34s linear infinite;
+
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* scrolling text individual text elements*/
+.scrolling-text-p span {
+    margin: 0 40px;
+
+    border: none;
 }
 
 .about {
     display: flex;
     flex-direction: row;
+
+    border: none;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+
+    box-shadow: 0 4px var(--grey);
 }
 
 .about .about-me {
@@ -87,10 +139,15 @@ nav {
     flex-basis: 40%;
 }
 
+.my-skillset li {
+    background-color: var(--yellow);
+}
+
 .about-image {
     flex-basis: 25%;
     max-width: 25%;
-    align-self:;
+
+    border: none;
 }
 
 .about-description {
@@ -112,4 +169,14 @@ nav {
 
 .about-description li {
     flex-basis: 2;
+}
+
+/* scrolling text animation style */
+@keyframes animate-text {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
 }
