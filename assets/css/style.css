@@ -1,12 +1,13 @@
+/* my variables */
 :root {
     --yellow: #ffff00;
     --grey: #c5c5c5;
 }
 
+/* universal styles */
 * {
     padding: 4px;
     margin: 4px;
-    border: solid 1px black;
     line-height: 1.25;
 }
 
@@ -15,15 +16,11 @@ html {
     margin: 0;
 
     scroll-behavior: smooth;
-
-    border: none;
 }
 
 body {
     margin: 0;
     padding: 0;
-
-    border: none;
 }
 
 header {
@@ -32,38 +29,34 @@ header {
     justify-content: space-between;
     box-shadow: 0 4px var(--grey);
 
-    border: none;
     border-bottom: solid 1px black;
 }
 
+/* nav links container */
 nav {
-
-    border: none;
     min-width: 275px;
 }
 
 footer {
     padding: 0px;
     margin: 0px;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+
     min-height: 75px;
     background-color: #000;
-
-    border: none;
 }
 
 footer p {
-
     color: white;
     margin-right: 12px;
-
-    border: none;
 }
 
+/* outlined type before each main section */
 .section-header {
     font-size: 24pt;
     color: black;
@@ -71,28 +64,26 @@ footer p {
 
     padding: 12px 12px;
     margin-top: 12px;
-
-    border: none;
 }
 
+/* adds // decoration before section-header type */
 .section-header::before {
     content: ". / ";
     color: white;
     -webkit-text-stroke: 1px black;
 }
 
+/* this is the "Abe Alberts / web developer" text container in header*/
 .name-plate {
     display: flex;
     flex-direction: column;
+
     min-width: 275px;
-    flex: 2 2 30%;
     text-align: right;
     max-width: fit-content;
-
-    border: none;
-
 }
 
+/* "Abe Alberts" in header*/
 .name-plate h1 {
     font-size: 24pt;
     border: none;
@@ -100,27 +91,26 @@ footer p {
     line-height: 1;
 }
 
+/* "web developer" in header*/
 .name-plate p {
     margin-top: 0px;
-    border: none;
 }
 
 .header-logo {
     margin: 12px 0;
     max-width: 150px;
     min-width: 100px;
-    flex-basis: 30%;
     justify-self: center;
+    border: solid 1px black;
 }
 
+/* ul for nav links */
 .nav-links {
     list-style: none;
     display: flex;
     flex-direction: row;
     flex: 2 2 30%;
     max-width: fit-content;
-
-    border: none;
     justify-content: space-between;
 }
 
@@ -156,40 +146,34 @@ footer p {
     border: none;
 }
 
-/*scrolling text under header*/
+/* scrolling text */
 .scrolling-text-p {
     font-size: 14px;
     font-weight: 500;
     text-transform: lowercase;
     color: black;
     animation: animate-text 34s linear infinite;
-
-    border: none;
     padding: 0;
     margin: 0;
 }
 
-/* scrolling text individual text elements*/
+/* individual scrolling text spans */
 .scrolling-text-p span {
     margin: 0 40px;
-
-    border: none;
 }
 
+/* main about section */
 .about {
     padding: 0px;
     margin: 0px;
+
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    position: relative;
-    align-items: start;
+    
     justify-content: space-around;
     align-items: center;
 
-    border: none;
     border-bottom: solid 1px black;
-
     box-shadow: 0 4px var(--grey);
 
     background-image: url(../images/about-bg.jpg);
@@ -197,24 +181,22 @@ footer p {
     background-size: cover;
 }
 
+/* profile image container */
 .pfp {
     flex-basis: 30%;
-    border: none;
-
 }
+
+/* profile image*/
 .about-image {
     background-color: #ffffffb8;
     aspect-ratio: 1 / 1;
     max-width: 100%;
-
-    border: none;
 }
 
+/* about me paragraph container */
 .about-me {
     min-height: 100%;
     flex-basis: 40%;
-
-    border: none;
 }
 
 .about-me h3,
@@ -224,8 +206,6 @@ footer p {
     max-width: fit-content;
     margin: 12px 6px;
     padding: 4px 12px ;
-
-    border: none;
 }
 
 .about-me p {
@@ -235,19 +215,17 @@ footer p {
     margin-left: 20px;
 
     background-color: #ffffffb8;
-
-    border: none;
 }
 
+/* skill list container */
 .my-skillset {
     height: fit-content;
     flex-basis: 20%;
     display: flex;
     flex-direction: column;
-
-    border: none;
 }
 
+/* skill list h3 - yes it's an id but made more sense to me to put here */
 #skills {
     margin: 0px;
 }
@@ -261,10 +239,9 @@ footer p {
     margin-left: 20px;
     width: fit-content;
     background-color: #ffffffb8;
-
-    border: none;
 }
 
+/* container for all project cards */
 .project-container {
     padding: 0px;
     margin: 0px;
@@ -274,12 +251,11 @@ footer p {
     flex-direction: row;
     justify-content: space-around;
 
-    border: none;
     border-bottom: solid 1px black;
-
     box-shadow: 0 4px var(--grey);
 }
 
+/* class for individual project cards */
 .project {
     text-decoration: none;
     aspect-ratio: 3 / 2;
@@ -287,13 +263,10 @@ footer p {
     background-position:center;
     background-repeat: no-repeat;
     background-color: var(--yellow);
-
-    border: none;
 }
 
 .project:hover {
     cursor: pointer;
-
 }
 
 .project:active {
@@ -302,20 +275,19 @@ footer p {
 
 .project h3,
 .project p {
-
     padding: 6px 12px;
     margin: 8px;
     background-color: var(--yellow);
     color: black;
     max-width: fit-content;
-
-    border: none;
 }
 
 .project h3 {
     font-size: 20pt;
 }
 
+/* the following IDs are to set background images and hover effects for each project card
+    yes, they are IDs, but it feels much more organized to have them here than below all the other classes*/
 #project-1 {
     background-image: url("../images/project-1.jpg");
     flex-basis: 98%;
@@ -361,6 +333,7 @@ footer p {
     background-image:linear-gradient(0deg, #ffff009b, #ffff0040), url(../images/project-5.jpg);
 }
 
+/* contact section container */
 .contact {
     padding: 0px;
     margin: 0px;
@@ -376,30 +349,22 @@ footer p {
     background-image: url(../images/about-bg.jpg);
     background-position: center;
     background-size: cover;
-
-    border: none;
-    border-bottom: solid 2px black;
-
-    box-shadow: 0 4px var(--grey);
 }
 
+/* class for individual contact cards */
 .contact-card {
     margin: 12px;
 
     display: flex;
     flex-direction: column;
-
     flex-basis: 30%;
 
     background-color: #ffffffb8;
-
-    border: none;
 }
 
 .contact-card h3 {
     font-size: 20pt;
 
-    border: none;
     border-bottom: solid 1px black;
 }
 
@@ -409,8 +374,6 @@ footer p {
     text-decoration: none;
     color: black;
     background-color: #0000000f;
-
-    border: none;
 }
 
 .contact-card a:hover {
@@ -423,6 +386,7 @@ footer p {
     -webkit-text-stroke: 1px black;
 }
 
+/* back to top button */
 #back-to-top {
     margin-left: 20px;
     color: white;
@@ -437,7 +401,8 @@ footer p {
 #back-to-top:hover {
     background-color: black;
 }
-/* scrolling text animation style */
+
+/* scrolling text animation */
 @keyframes animate-text {
     from {
         transform: translate3d(0, 0, 0);
@@ -447,6 +412,7 @@ footer p {
     }
 }
 
+/* makes changes to layout when screen size is =< 775px */
 @media screen and (max-width: 775px) {
 
     header {
@@ -458,6 +424,11 @@ footer p {
         flex-basis: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    footer p {
+        font-size: smaller;
+        flex-basis: 50%;
     }
 
     .about-image {
@@ -497,10 +468,5 @@ footer p {
     #project-4,
     #project-5 {
         flex-basis: 98%;
-    }
-    
-    footer p {
-        font-size: smaller;
-        flex-basis: 50%;
     }
 }
