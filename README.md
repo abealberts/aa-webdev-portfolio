@@ -14,15 +14,19 @@ This is a web app built to showcase myself as a developer. The site contains det
 
 ### [Visit my online development portfolio by clicking here.](https://abealberts.github.io/aa-webdev-portfolio/)
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+### Screenshots:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+![web app screenshot of header and about sections](./assets/images/screenshots/screenshot-1.jpg)
+
+![web app screenshot of projects section](./assets/images/screenshots/screenshot-2.jpg)
+
+![web app screenshot of contact section and footer](./assets/images/screenshots/screenshot-3.jpg)
+
+I am always open to feedback and constructive criticism! Do not hesitate to reach out and let me know what you think.
 
 ## Credits
 
-Helpful tutorials/threads I consulted while creating this project:
+### Helpful tutorials/threads I consulted while creating this project:
 
 - [Creating infinite scrolling text with just HTML & CSS](https://www.myoussouf.com/blog/horizontal-scrolling-text-css)
 
@@ -30,28 +34,16 @@ Helpful tutorials/threads I consulted while creating this project:
 
 - [Adding color overlays to background images in CSS](https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css)
 
+### Stock image credits:
+- Anni Roenkae
+- Karsten Madsen
+- Anna Nekrashevich
+- Mikhail Nilov
+- Sora Shimazaki
+- Lukas
+- Fauxels
+- Pixabay
+
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-
-## Badges
-
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-
-## Features
-
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+MIT License
