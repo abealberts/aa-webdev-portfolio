@@ -59,6 +59,8 @@ footer {
 footer p {
 
     color: white;
+    margin-right: 12px;
+
     border: none;
 }
 
@@ -465,6 +467,8 @@ footer p {
 
     .name-plate {
         margin-bottom: -20px;
+        margin-left: 0px;
+        padding: 0px;
         min-width: 0px;
         max-width: min-content;
     }
